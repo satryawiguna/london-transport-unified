@@ -1,0 +1,5 @@
+@layer components {
+  .top-navigation {
+    @apply bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700;
+  }
+}
