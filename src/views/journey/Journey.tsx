@@ -52,7 +52,7 @@ const Journey = ({t}: JourneyPropType) => {
             className="bg-center bg-no-repeat bg-[url('./journey-london.jpg')] bg-gray-500 bg-blend-multiply">
             <div className="px-4 mx-auto max-w-screen-xl py-56 pb-10">
                 <div
-                    className="w-full lg:max-w-xl p-6 mb-56 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
+                    className="w-full lg:max-w-xl p-6 mb-72 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                         {t('text.search_your_journey')}
                     </h2>
@@ -64,19 +64,6 @@ const Journey = ({t}: JourneyPropType) => {
                             >
                                 {t('label.start_from')}
                             </label>
-                            {/*<AddressAutofill accessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}*/}
-                            {/*                 options={{*/}
-                            {/*                     country: 'GB',*/}
-                            {/*                 }}>*/}
-                            {/*    <input*/}
-                            {/*        type="text"*/}
-                            {/*        name="start_from"*/}
-                            {/*        autoComplete="address-level1 street-address"*/}
-                            {/*        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"*/}
-                            {/*        onChange={(e) => setStartFrom(e.target.value)}*/}
-                            {/*        value={startFrom}/>*/}
-                            {/*</AddressAutofill>*/}
-
                             <Combobox value={selectedStartFrom}
                                       onChange={(value: any) => {
                                           setSelectedStarFrom(value)
@@ -164,19 +151,6 @@ const Journey = ({t}: JourneyPropType) => {
                             >
                                 {t('label.end_to')}
                             </label>
-                            {/*<AddressAutofill accessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}*/}
-                            {/*                 options={{*/}
-                            {/*                     country: 'GB',*/}
-                            {/*                 }}>*/}
-                            {/*    <input*/}
-                            {/*        type="text"*/}
-                            {/*        name="end_to"*/}
-                            {/*        autoComplete="address-level1 street-address"*/}
-                            {/*        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"*/}
-                            {/*        onChange={(e) => setEndTo(e.target.value)}*/}
-                            {/*        value={endTo}/>*/}
-                            {/*</AddressAutofill>*/}
-
                             <Combobox value={selectedEndTo}
                                       onChange={(value: any) => {
                                           setSelectedEndTo(value)

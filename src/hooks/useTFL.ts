@@ -23,9 +23,15 @@ const useFetchAllBikePoints = (onSuccess?: (res: any) => void, onError: (err: an
         onSuccess ? {onSuccess, onError} : {onError})
 }
 
+const useFetchAllJourneyPlanners = (onSuccess?: (res: any) => void, onError: (err: any) => void = onErrorDefault) => {
+    return useQuery(['fetch-all-journey-planners'], TFLService.getAllJourneyPlanners,
+        onSuccess ? {onSuccess, onError} : {onError})
+}
+
 export {
     useFetchAllJournies,
     useFetchPlaceByName,
     useFetchAirQualities,
-    useFetchAllBikePoints
+    useFetchAllBikePoints,
+    useFetchAllJourneyPlanners
 }
