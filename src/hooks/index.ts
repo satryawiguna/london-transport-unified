@@ -7,5 +7,6 @@ export {
     useFetchAllJournies,
     useFetchPlaceByName,
     useFetchAirQualities,
-    useFetchAllBikePoints
+    useFetchAllBikePoints,
+    useFetchAllJourneyPlanners
 } from './useTFL'

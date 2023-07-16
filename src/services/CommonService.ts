@@ -16,7 +16,7 @@ export class CommonService {
                 id: 3, name: 'menu.other_information', childs: [
                     {id: 31, name: 'menu.air_quality', path: '/air-quality'},
                     {id: 32, name: 'menu.bike_point', path: '/bike-point'},
-                    {id: 33, name: 'menu.journey_available', path: '/journey-available'},
+                    {id: 33, name: 'menu.journey_planner', path: '/journey/planner'},
                 ]
             },
             {id: 4, name: 'menu.about', path: '/about'},

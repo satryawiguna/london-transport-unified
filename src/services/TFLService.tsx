@@ -28,4 +28,8 @@ export class TFLService {
     static async getAllBikePoints(request: QueryFunctionContext<[string]>): Promise<any> {
         return await ApiTFL().get(`/BikePoint/?app_id=${import.meta.env.VITE_TFL_APP_ID}&app_key=${import.meta.env.VITE_TFL_APP_KEY}`, config)
     }
+
+    static async getAllJourneyPlanners(request: QueryFunctionContext<[string]>): Promise<any> {
+        return await ApiTFL().get(`/Journey/Meta/Modes/?app_id=${import.meta.env.VITE_TFL_APP_ID}&app_key=${import.meta.env.VITE_TFL_APP_KEY}`, config)
+    }
 }

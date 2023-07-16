@@ -2,6 +2,10 @@ export const generateTagTranslation = (text: string, prefix: string): string => 
     return prefix + "." + text.replace(/\W+/g, '_').toLowerCase()
 }
 
+export const generateTagLabel = (text: string): string => {
+    return text.replace(/\W+/g, ' ').toUpperCase()
+}
+
 export const htmlDecode = (content: string) => {
     const e = document.createElement('div')
 
