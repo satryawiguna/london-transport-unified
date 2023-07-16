@@ -7,6 +7,12 @@ const useFetchAllLanguages = (onSuccess?: (res: any) => void, onError: (err: any
         onSuccess ? {onSuccess, onError} : {onError})
 }
 
+const useFetchAllTopMenus = (onSuccess?: (res: any) => void, onError: (err: any) => void = onErrorDefault) => {
+    return useQuery(['fetch-all-top-menus'], CommonService.getAllTopMenus,
+        onSuccess ? {onSuccess, onError} : {onError})
+}
+
 export {
-    useFetchAllLanguages
+    useFetchAllLanguages,
+    useFetchAllTopMenus
 }
