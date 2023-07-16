@@ -18,6 +18,10 @@ export class TFLService {
     static async getPlaceByName(request: QueryFunctionContext<[string, string]>): Promise<any> {
         const name = request.queryKey[1]
 
-        return await ApiTFL().get(`Place/Search?name=${name}&app_id=${import.meta.env.VITE_TFL_APP_ID}&app_key=${import.meta.env.VITE_TFL_APP_KEY}`, config)
+        return await ApiTFL().get(`/Place/Search?name=${name}&app_id=${import.meta.env.VITE_TFL_APP_ID}&app_key=${import.meta.env.VITE_TFL_APP_KEY}`, config)
+    }
+
+    static async getAllAirQualities(request: QueryFunctionContext<[string]>): Promise<any> {
+        return await ApiTFL().get(`/AirQuality/?app_id=${import.meta.env.VITE_TFL_APP_ID}&app_key=${import.meta.env.VITE_TFL_APP_KEY}`, config)
     }
 }

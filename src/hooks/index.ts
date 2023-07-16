@@ -5,5 +5,6 @@ export {
 
 export {
     useFetchAllJournies,
-    useFetchPlaceByName
+    useFetchPlaceByName,
+    useFetchAirQualities
 } from './useTFL'

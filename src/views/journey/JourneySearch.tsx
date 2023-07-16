@@ -18,8 +18,6 @@ const JourneySearch = ({t}: JourneySearchType) => {
 
     const {data: dataJournies, isLoading: isLoadingJournies} = useFetchAllJournies(journey)
 
-    console.log(dataJournies)
-
     return (
         <section>
             <div className="px-4 mx-auto max-w-screen-xl py-24 pb-10">

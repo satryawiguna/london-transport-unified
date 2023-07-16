@@ -11,6 +11,7 @@ import PrivateRoute from "./routes/PrivateRoute";
 import NotFound from "./views/404";
 import Journey from "./views/journey/Journey";
 import JourneySearch from "./views/journey/JourneySearch";
+import AirQuality from "./views/airquality/AirQuality";
 
 const App = () => {
     const {isLoading, lang} = useSelector(fetchCommon)
@@ -40,6 +41,7 @@ const App = () => {
                     <Route path="/" element={<Home t={t}/>}/>
                     <Route path="/journey" element={<Journey t={t}/>}/>
                     <Route path="/journey/search" element={<JourneySearch t={t}/>}/>
+                    <Route path="/air-quality" element={<AirQuality t={t}/>}/>
                     <Route path="/*" element={<Navigate to={'/404'}/>}/>
                     <Route path="/404" element={<NotFound t={t}/>}/>
                 </Route>
