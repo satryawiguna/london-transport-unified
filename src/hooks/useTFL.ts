@@ -13,7 +13,13 @@ const useFetchPlaceByName = (name: string, onSuccess?: (res: any) => void, onErr
         onSuccess ? {onSuccess, onError} : {onError})
 }
 
+const useFetchAirQualities = (onSuccess?: (res: any) => void, onError: (err: any) => void = onErrorDefault) => {
+    return useQuery(['fetch-air-quality'], TFLService.getAllAirQualities,
+        onSuccess ? {onSuccess, onError} : {onError})
+}
+
 export {
     useFetchAllJournies,
-    useFetchPlaceByName
+    useFetchPlaceByName,
+    useFetchAirQualities
 }

@@ -7,5 +7,6 @@ export type Language = {
 export type TopMenu = {
     id: number,
     name: string,
-    path: string
+    path?: string,
+    childs?: Array<TopMenu>
 }
