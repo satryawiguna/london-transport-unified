@@ -11,7 +11,7 @@ const Home = ({t}: HomePropType) => {
         <>
             <section
                 className="bg-center bg-no-repeat bg-[url('./bus-london.jpeg')] bg-gray-500 bg-blend-multiply">
-                <div className="px-4 mx-auto max-w-screen-xl text-center py-56">
+                <div className="px-4 mx-auto max-w-screen-xl text-center py-56 pb-10">
                     <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">{t('text.journey_with_tfl_keep_getting_brighter')}</h1>
                     <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">{t('text.findout_more_about_the_improvements_we_re_making_now_and_in_furture')}</p>
                     <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
@@ -29,13 +29,13 @@ const Home = ({t}: HomePropType) => {
                             {t("label.more_information")}
                         </a>
                     </div>
-                    <div className="mt-10">
-                        <iframe className="mx-auto w-full lg:max-w-xl h-72 rounded-lg sm:h-96 shadow-xl"
-                                src="https://www.youtube.com/embed/Qmq4SZUxqQY" title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen></iframe>
-                    </div>
+                </div>
+                <div className="pb-56">
+                    <iframe className="mx-auto w-full lg:w-[50%] h-72 rounded-lg sm:h-96 shadow-xl"
+                            src="https://www.youtube.com/embed/Qmq4SZUxqQY" title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
                 </div>
             </section>
         </>

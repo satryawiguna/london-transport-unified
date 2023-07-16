@@ -3,3 +3,9 @@ export type Language = {
     slug: string
     title: string
 }
+
+export type TopMenu = {
+    id: number,
+    name: string,
+    path: string
+}

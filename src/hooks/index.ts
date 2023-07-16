@@ -1,3 +1,9 @@
 export {
-    useFetchAllLanguages
+    useFetchAllLanguages,
+    useFetchAllTopMenus
 } from './useCommon'
+
+export {
+    useFetchAllJournies,
+    useFetchPlaceByName
+} from './useTFL'

@@ -10,6 +10,7 @@ import Home from "./views/home/Home";
 import PrivateRoute from "./routes/PrivateRoute";
 import NotFound from "./views/404";
 import Journey from "./views/journey/Journey";
+import JourneySearch from "./views/journey/JourneySearch";
 
 const App = () => {
     const {isLoading, lang} = useSelector(fetchCommon)
@@ -38,6 +39,7 @@ const App = () => {
                 <Route element={<PublicRoute t={t} i18n={i18n}/>}>
                     <Route path="/" element={<Home t={t}/>}/>
                     <Route path="/journey" element={<Journey t={t}/>}/>
+                    <Route path="/journey/search" element={<JourneySearch t={t}/>}/>
                     <Route path="/*" element={<Navigate to={'/404'}/>}/>
                     <Route path="/404" element={<NotFound t={t}/>}/>
                 </Route>

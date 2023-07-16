@@ -6,5 +6,9 @@ export default defineConfig({
     plugins: [react()],
     server: {
         port: 1982,
+        https: {
+            key: './tflwebsite-privateKey.key',
+            cert: './tflwebsite.crt'
+        }
     },
 })
