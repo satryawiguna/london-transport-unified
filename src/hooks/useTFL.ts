@@ -18,8 +18,14 @@ const useFetchAirQualities = (onSuccess?: (res: any) => void, onError: (err: any
         onSuccess ? {onSuccess, onError} : {onError})
 }
 
+const useFetchAllBikePoints = (onSuccess?: (res: any) => void, onError: (err: any) => void = onErrorDefault) => {
+    return useQuery(['fetch-all-bike-points'], TFLService.getAllBikePoints,
+        onSuccess ? {onSuccess, onError} : {onError})
+}
+
 export {
     useFetchAllJournies,
     useFetchPlaceByName,
-    useFetchAirQualities
+    useFetchAirQualities,
+    useFetchAllBikePoints
 }
