@@ -33,7 +33,8 @@ const AirQuality = ({t}: AirQualityPropType) => {
     return (
         <section className="dark:bg-gray-900 dark:text-white">
             <div className="px-4 mx-auto max-w-screen-xl py-24 pb-10">
-                <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+                <div
+                    className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 min-h-screen">
                     {
                         !isLoadingAirQualities ? (
                             <div className="grid grid-cols-2 gap-4 mb-4">
