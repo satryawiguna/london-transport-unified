@@ -1,6 +1,6 @@
 import PropTypes, {InferProps} from "prop-types";
 import {useFetchAirQualities} from "../../hooks";
-import {generateTagTranslation} from "../../helper";
+import {generateTagTranslation, htmlDecode} from "../../helper";
 
 const AirQualityProps = {
     t: PropTypes.func.isRequired
@@ -141,7 +141,7 @@ const AirQuality = ({t}: AirQualityPropType) => {
                                                     </tbody>
                                                 </table>
                                                 <div className="mt-10"
-                                                     dangerouslySetInnerHTML={{__html: item.forecastText}}></div>
+                                                     dangerouslySetInnerHTML={{__html: htmlDecode(item.forecastText)}}></div>
                                             </div>
                                         </div>
                                     ))
