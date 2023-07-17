@@ -1,8 +1,8 @@
 {
   "text.journey_with_tfl_keep_getting_brighter": "Journey with TFL, keep getting brighter",
   "text.findout_more_about_the_improvements_we_re_making_now_and_in_furture": "Findout more about the improvements we're making now and in furture",
-  "label.start_journey": "Start Journey",
-  "label.more_information": "More Information",
+  "text.got_a_technical_issue_want_to_send_feedback_about_a_beta_feature_need_details_about_our_business_plan_let_us_know": "Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know",
+  "text.search_your_journey": "Search your journey",
   "menu.home": "Home",
   "menu.start_journey": "Start Journey",
   "menu.about": "About",
@@ -32,5 +32,18 @@
   "label.total_duration": "Total Duration",
   "label.hours": "Hours",
   "label.leg_information": "Leg Information",
-  "label.fare_information": "Fare Information"
+  "label.fare_information": "Fare Information",
+  "label.id": "ID",
+  "label.place_type": "Place Type",
+  "label.start_journey": "Start Journey",
+  "label.more_information": "More Information",
+  "label.contact_us": "Contact Us",
+  "label.your_email": "Your Email",
+  "label.subject": "Subject",
+  "label.your_message": "Your Message",
+  "label.send_email": "Send Email",
+  "label.let_us_know_how_we_can_help_you": "Let us know how we can help you",
+  "label.leave_a_comment": "Leave a comment",
+  "label.start_from": "Start from",
+  "label.end_to": "End to"
 }

@@ -14,6 +14,7 @@ import JourneySearch from "./views/journey/JourneySearch";
 import AirQuality from "./views/air-quality/AirQuality";
 import BikePoint from "./views/bike-point/BikePoint";
 import JourneyPlanners from "./views/journey/JourneyPlanners";
+import Contact from "./views/contact/Contact";
 
 const App = () => {
     const {isLoading, lang} = useSelector(fetchCommon)
@@ -46,6 +47,7 @@ const App = () => {
                     <Route path="/journey/planner" element={<JourneyPlanners t={t}/>}/>
                     <Route path="/air-quality" element={<AirQuality t={t}/>}/>
                     <Route path="/bike-point" element={<BikePoint t={t}/>}/>
+                    <Route path="/contact" element={<Contact t={t}/>}/>
                     <Route path="/*" element={<Navigate to={'/404'}/>}/>
                     <Route path="/404" element={<NotFound t={t}/>}/>
                 </Route>

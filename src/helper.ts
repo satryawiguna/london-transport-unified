@@ -13,3 +13,9 @@ export const htmlDecode = (content: string) => {
 
     return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
 }
+
+export const swapElements = (arr, i1, i2) => {
+    arr[i1] = arr.splice(i2, 1, arr[i1])[0]
+
+    return arr
+}
