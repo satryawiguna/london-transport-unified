@@ -26,5 +26,11 @@
   "label.fare_paying": "Fare Paying",
   "label.tfl_service": "TFL Service",
   "label.no": "No",
-  "label.yes": "Yes"
+  "label.yes": "Yes",
+  "label.start": "Start",
+  "label.end": "End",
+  "label.total_duration": "Total Duration",
+  "label.hours": "Hours",
+  "label.leg_information": "Leg Information",
+  "label.fare_information": "Fare Information"
 }
