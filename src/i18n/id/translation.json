@@ -26,5 +26,11 @@
   "label.fare_paying": "Pembayaran Biaya",
   "label.tfl_service": "Layanan TFL",
   "label.no": "Tidak",
-  "label.yes": "Ya"
+  "label.yes": "Ya",
+  "label.start": "Mulai",
+  "label.end": "Berakhir",
+  "label.total_duration": "Total Durasi",
+  "label.hours": "Jam",
+  "label.leg_information": "Informasi Tambahan",
+  "label.fare_information": "Informasi Biaya"
 }
