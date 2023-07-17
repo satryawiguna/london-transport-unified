@@ -10,7 +10,7 @@ import {BrowserRouter} from "react-router-dom";
 import './index.scss';
 import './utils/i18Next';
 import 'flowbite';
-
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const config: QueryClientConfig = {
     defaultOptions: {
